@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Agent</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #c2b7b7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #e7dfdf;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #141558;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #4556a0;
+        }
+        
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Valorant Survey </h1>
+        <form id="agentSurveyForm">
+            <label for="playerName">Your In-Game Name (IGN):</label>
+            <input type="text" id="playerName" name="playerName" required>
+
+            <label for="playerRank">Your Rank:</label>
+            <select id="playerRank" name="playerRank">
+                <option value="iron">Iron</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="platinum">Platinum</option>
+                <option value="diamond">Diamond</option>
+                <option value="immortal">Immortal</option>
+                <option value="radiant">Radiant</option>
+            </select>
+
+            <label for="preferredAgent">Preferred Agent:</label>
+            <select id="preferredAgent" name="preferredAgent" required>
+                <option value="">Select an Agent</option>
+                <option value="brimstone">Brimstone</option>
+                <option value="viper">Viper</option>
+                <option value="omen">Omen</option>
+                <option value="killjoy">Killjoy</option>
+                <option value="cypher">Cypher</option>
+                <option value="sage">Sage</option>
+                <option value="sova">Sova</option>
+                <option value="reyna">Reyna</option>
+                <option value="phoenix">Phoenix</option>
+                <option value="jett">Jett</option>
+                <option value="raze">Raze</option>
+                <option value="breach">Breach</option>
+                <option value="skye">Skye</option>
+                <option value="yoru">Yoru</option>
+                <option value="astra">Astra</option>
+                <option value="gekko">Gekko</option>
+                <option value="neon">Neon</option>
+                <option value="clove">Clove</option>
+            </select>
+
+            <label for="agentRole">Role:</label>
+            <select id="agentRole" name="agentRole">
+                <option value="duelist">Duelist</option>
+                <option value="initiator">Initiator</option>
+                <option value="controller">Controller</option>
+                <option value="sentinel">Sentinel</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
